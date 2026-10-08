@@ -68,7 +68,7 @@ If $1 \le n \le 9$, then print the lowercase English word corresponding to the n
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-08T06:54:49.485Z  
+**Submitted:** 2026-10-08T10:31:43.181Z  
 
 ```c
 #include <stdio.h>
@@ -76,18 +76,38 @@ If $1 \le n \le 9$, then print the lowercase English word corresponding to the n
 int main() {
     int n;
     scanf("%d", &n);
-
-    char *words[] = {
-        "", "one", "two", "three", "four", 
-        "five", "six", "seven", "eight", "nine"
-    };
-
-    if (n >= 1 && n <= 9) {
-        printf("%s\n", words[n]);
-    } else {
-        printf("Greater than 9\n");
+    
+    if (n == 1) {
+        printf("one");
     }
-
+    else if (n == 2) {
+        printf("two");
+    }
+    else if (n == 3) {
+        printf("three");
+    }
+    else if (n == 4) {
+        printf("four");
+    }
+    else if (n == 5) {
+        printf("five");
+    }
+    else if (n == 6) {
+        printf("six");
+    }
+    else if (n == 7) {
+        printf("seven");
+    }
+    else if (n == 8) {
+        printf("eight");
+    }
+    else if (n == 9) {
+        printf("nine");
+    }
+    else {
+        printf("Greater than 9");
+    }
+    
     return 0;
 }
 
